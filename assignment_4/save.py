@@ -17,3 +17,4 @@ def saveTask(taskString):
     dbPath = os.path.join( os.getenv("HOME"), dbFilename )
     with open(dbPath, "a") as myfile:
         myfile.write(taskString)
+    parsedTask = parseArguments(sys.argv)
