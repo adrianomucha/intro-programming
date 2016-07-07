@@ -21,5 +21,5 @@ clean:
 	rm hello.i hello.s hello.o hello
 
 loop: loop.c
-    gcc -o loop loop.c
+	    gcc -o loop loop.c
 
