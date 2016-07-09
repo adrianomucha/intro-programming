@@ -25,4 +25,25 @@ def get_fall_time(height):
 
 print(vertical_height(10))
 print(get_fall_time(20))
-                
+
+def isVulnerable(tower_height, tower_x, tower_y, target_x, target_y):
+    muzzle_velocity = 300
+
+ # update this line to calculate time_in_air using get_fall_time() function
+def  time_in_air(height):
+    return math.sqrt((2 * height) / (9.8)) 
+
+    tower_range = time_in_air * muzzle_velocity
+
+    delta_x = None  # difference between tower_x and target_x
+    delta_y = None  # difference between tower_y and target_y
+
+    separation = None  # the x and y deltas form a triangle, find the hypotenuse
+    if separation < tower_range:
+
+        print("The target is closer than the tower range, what should we return?")
+    return None
+    
+    else:
+        print("The target is further than the tower range, what should we return?")
+    return None
