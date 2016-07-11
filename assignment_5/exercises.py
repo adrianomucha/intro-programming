@@ -1,15 +1,13 @@
 import math
 
 def to_fahrenheit(degrees_celsius):
-    degrees_celsius= (to_fahrenheit - 32) * 5 / 9    
-    return degrees_celsius
+    return(degrees_celsius - 32) * 5 / 9
 
 def to_celsius(degrees_fahrenheit):
-    fahrenheit = (degrees_fahrenheit * 9 / 5) + 32         
-    return degrees_fahrenheit
+    return(degrees_fahrenheit * 9 / 5) + 32
 
-print(degrees_celsius(10))
-print(to_celsius(1))
+print(to_celsius(11))
+print(to_fahrenheit(11))
 
 def get_fall_time(vertical_height):
     # gravity isn't going to change, units in m/(s^2)
