@@ -1,10 +1,12 @@
 import math
 
 def to_fahrenheit(degrees_celsius):
-    return(degrees_celsius - 32) * 5 / 9
+    output = degrees_celsius * (9 / 5) + 32
+    return output
 
 def to_celsius(degrees_fahrenheit):
-    return(degrees_fahrenheit * 9 / 5) + 32
+    output = (degrees_fahrenheit - 32) * 5 / 9
+    return output 
 
 print(to_celsius(11))
 print(to_fahrenheit(11))
