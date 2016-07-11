@@ -12,9 +12,12 @@ def parseArguments(argvArray):
 
 def saveTask(taskString):
     """ writes passed taskString to the file database"""
-
-    dbFilename = "task_database_python.txt"
-    dbPath = os.path.join( os.getenv("HOME"), dbFilename )
+    
+    db_filename = "task_database_python.txt"
+    dbPath = os.path.join( os.getenv("HOME"), db_filename )
     with open(dbPath, "a") as myfile:
         myfile.write(taskString)
-    parsedTask = parseArguments(sys.argv)
+
+new_task = parseArguments(sys.argv)
+saveTask(new_task)
+
