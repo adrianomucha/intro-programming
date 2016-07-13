@@ -7,6 +7,7 @@ def show_help():
 Enter 'HELP' to get help.
 Enter 'DONE' to stop adding items.
 Enter 'SHOW' to see your current list.
+Enter 'AUTHOR' to see author of the program.
 """)
 
 def show_list():
@@ -16,6 +17,9 @@ def show_list():
 def add_to_list(new_item):
     shopping_list.append(new_item)
     print("Added {}, list now has {} items".format(new_item, len(shopping_list)))
+
+def show_author():
+    print("Adrian Mucha NYU, 2016")
 
 show_help()
 
@@ -29,6 +33,9 @@ while True:
     elif new_item == 'SHOW':
         show_list()
         continue 
+    elif new_item == 'AUTHOR': 
+        show_author()
+        continue
 
     add_to_list(new_item)
 
